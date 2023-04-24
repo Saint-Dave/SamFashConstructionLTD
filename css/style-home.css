@@ -128,8 +128,6 @@ header {
     position: relative;
     z-index: 1;
     max-width: 800px;
-    margin-top: 200px;
-    margin-left: 100px;
   }
   
   .hero .content h1 {
