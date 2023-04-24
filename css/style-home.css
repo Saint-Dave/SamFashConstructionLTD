@@ -93,10 +93,10 @@ header {
  /* HERO */
  .hero {
     position: relative;
-    /* background-color: var(--nColorW 0.1); */
+    background-color: var(--nColorW) 0.4; 
     overflow: hidden;
-    /* border-radius: 0px 0px 300px 300px; */
-    /* box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1); */
+    border-radius: 0px 0px 300px 300px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 80vh;
     
@@ -136,11 +136,10 @@ header {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 1px;
-    padding-top: 20vh;
+    padding-top: 40vh;
     text-align: center;
     color: var(--pColor);
     font-family: var(--pFontFamily);
-    font-family: var(--sFF);
     line-height: 40px;
     letter-spacing: 5px;
   }
