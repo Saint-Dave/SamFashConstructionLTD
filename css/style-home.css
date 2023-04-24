@@ -92,7 +92,7 @@ header {
  /* HERO */
  .hero {
     position: relative;
-    background-color: var(--nColorW) 0.9;
+    background-color: var(--nColorW) 0.4;
     overflow: hidden;
     /* border-radius: 0px 0px 300px 300px; */
     /* box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1); */
@@ -132,9 +132,11 @@ header {
   }
   
   .hero .content h1 {
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 40px;
+    font-weight: 700;
     margin-bottom: 1px;
+    padding-top: 20vh;
+    text-align: center;
     color: var(--pColor);
     font-family: var(--pFontFamily);
     line-height: 80px;
