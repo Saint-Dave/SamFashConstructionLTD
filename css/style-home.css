@@ -92,7 +92,7 @@ header {
  /* HERO */
  .hero {
     position: relative;
-    background-color: var(--nColorW) 0.4;
+    background-color: var(--nColorW 0.1);
     overflow: hidden;
     /* border-radius: 0px 0px 300px 300px; */
     /* box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1); */
