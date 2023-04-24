@@ -139,7 +139,7 @@ header {
     text-align: center;
     color: var(--pColor);
     font-family: var(--pFontFamily);
-    line-height: 80px;
+    line-height: 30px;
     letter-spacing: 0px;
   }
   
