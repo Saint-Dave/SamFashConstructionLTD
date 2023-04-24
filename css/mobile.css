@@ -4,7 +4,6 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  /* width: 100%; */
   max-width: 480px;
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -27,7 +26,7 @@ header {
 .topnav {
   display: block;
   overflow: hidden;
-  background-color: #7E4331;
+  background-color: #ffffff;
   position: relative;
 }
 
@@ -36,7 +35,8 @@ header {
 }
 
 .topnav a {
-  color: #fdd0a5;
+  color: #7E4331;
+  float: right;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -44,8 +44,6 @@ header {
 }
 
 .topnav a.icon {
-
-  /* display: block; */
   position: absolute;
   right: 0;
   top: 0;
@@ -64,7 +62,6 @@ header {
 
 
 /* HERO */
-
 .hero {
   position: relative;
   background-color: var(--sColor) 0.4;

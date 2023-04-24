@@ -136,6 +136,7 @@ header {
     font-size: 80px;
     font-weight: 800;
     margin-bottom: 1px;
+    text-align: center;
     color: var(--pColor);
     font-family: var(--pFontFamily);
     line-height: 80px;
