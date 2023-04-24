@@ -5,7 +5,6 @@
     --nColorW: #ffffff;
     --nColorB: #2d2d2d;
 
-    --sFF: 'Georgia', serif; 
     --pFontFamily: 'Signika', sans-serif;
 
     --font-weight-light: 300;
@@ -38,7 +37,6 @@ body{
 a{
     text-decoration: none;
 }
-
 /* HEADER  */
 header {
     position: fixed;
@@ -93,12 +91,10 @@ header {
  /* HERO */
  .hero {
     position: relative;
-    background-color: var(--nColorW) 0.4; 
     overflow: hidden;
     border-radius: 0px 0px 300px 300px;
+    height: 70vh;
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: 80vh;
     
   }
   
@@ -106,6 +102,8 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
   }
   
@@ -114,7 +112,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -127,21 +125,31 @@ header {
   .hero .content {
     position: relative;
     z-index: 1;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.8);
     text-align: center;
   }
   
   .hero .content h1 {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 1px;
-    padding-top: 40vh;
-    text-align: center;
-    color: var(--pColor);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3vh;
+    padding-top: 30vh;
+    color: var(--sColor);
     font-family: var(--pFontFamily);
-    line-height: 40px;
-    letter-spacing: 5px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  .hero .content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    margin-top: 1px;
+    font-weight: var(--font-weight-bold);
+    color: var(--pColor);
   }
   
   .hero .btn {
@@ -152,7 +160,7 @@ header {
     text-transform: uppercase;
     color: #ffffff;
     background-color: var(--pColor);
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 0 50px 50px 50px;
     transition: background-color 0.2s ease-in-out;
   }
   
@@ -240,6 +248,7 @@ header {
 
 
 /* SERVICES */
+
 .services h2{
     font-weight: var(--font-weight-bold);
     font-size: 60px;
@@ -267,6 +276,8 @@ header {
 
 
 /* PROJECTS */
+
+
 .projects h2{
     font-weight: var(--font-weight-bold);
     font-size: 60px;
@@ -357,6 +368,7 @@ header {
  }
 
 .contact-button{
+    /* display: inline-block; */
     text-align: center;
     padding: 12px 24px;
     font-size: 18px;
@@ -380,7 +392,22 @@ header {
     margin-top: 50px;
     padding-bottom: 50px;
 }
+/* .contact-menu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px; */
+/* } */
+ /* .contact .menu-colored{
+    color: #7E4331;
+    font-size: 20px;
+    font-weight: bold;
+ } */
 
+ /* .contact-menu span{
+    color: #414141;
+    font-size: 20px;
+    font-weight: bold;
+ } */
 .map-container {
     height: 0;
     padding-bottom: 300px;
@@ -401,7 +428,7 @@ header {
 
   /* footer */
   .footer{
-  
+    /* background-color: #7E4331; */
     margin-top: 0px;
     height: 40px;
     text-align: center;
