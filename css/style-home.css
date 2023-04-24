@@ -33,14 +33,12 @@
 body{
     font-family: var(--pFontFamily);
     background-color: var(--nColorW);
-    /* background-color: white; */
 }
 a{
     text-decoration: none;
 }
+
 /* HEADER  */
-
-
 header {
     position: fixed;
     top: 0;
@@ -82,7 +80,6 @@ header {
   }
   
   .logo img {
-    /* display: block; */
     height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -93,12 +90,9 @@ header {
 }
 
  /* HERO */
-
  .hero {
     position: relative;
-    /* background-color: hwb(0 82% 13% / 0.3); */
-    background-color: var(--sColor) 0.4;
-    /* background-color: white 0.3; */
+    background-color: var(--ColorW) 0.4;
     overflow: hidden;
     border-radius: 0px 0px 300px 300px;
     height: 600px;
@@ -136,9 +130,6 @@ header {
     max-width: 800px;
     margin-top: 200px;
     margin-left: 100px;
-
-    /* padding: 100px 50px; */
-    /* text-align: center; */
   }
   
   .hero .content h1 {
@@ -146,11 +137,9 @@ header {
     font-weight: 800;
     margin-bottom: 1px;
     color: var(--pColor);
-    /* color: #fdd0a5; */
     font-family: var(--pFontFamily);
     line-height: 80px;
     letter-spacing: 0px;
-    /* text-shadow: 0 1px 5px #414141; */
   }
   
   .hero .content p {
@@ -258,7 +247,6 @@ header {
 
 
 /* SERVICES */
-
 .services h2{
     font-weight: var(--font-weight-bold);
     font-size: 60px;
@@ -286,8 +274,6 @@ header {
 
 
 /* PROJECTS */
-
-
 .projects h2{
     font-weight: var(--font-weight-bold);
     font-size: 60px;
@@ -378,7 +364,6 @@ header {
  }
 
 .contact-button{
-    /* display: inline-block; */
     text-align: center;
     padding: 12px 24px;
     font-size: 18px;
@@ -402,22 +387,7 @@ header {
     margin-top: 50px;
     padding-bottom: 50px;
 }
-/* .contact-menu{
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px; */
-/* } */
- /* .contact .menu-colored{
-    color: #7E4331;
-    font-size: 20px;
-    font-weight: bold;
- } */
 
- /* .contact-menu span{
-    color: #414141;
-    font-size: 20px;
-    font-weight: bold;
- } */
 .map-container {
     height: 0;
     padding-bottom: 300px;
@@ -438,7 +408,7 @@ header {
 
   /* footer */
   .footer{
-    /* background-color: #7E4331; */
+  
     margin-top: 0px;
     height: 40px;
     text-align: center;
