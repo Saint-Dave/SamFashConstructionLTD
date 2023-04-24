@@ -5,6 +5,7 @@
     --nColorW: #ffffff;
     --nColorB: #2d2d2d;
 
+    --sFF: 'Georgia', serif; 
     --pFontFamily: 'Signika', sans-serif;
 
     --font-weight-light: 300;
@@ -92,7 +93,7 @@ header {
  /* HERO */
  .hero {
     position: relative;
-    background-color: var(--nColorW 0.1);
+    /* background-color: var(--nColorW 0.1); */
     overflow: hidden;
     /* border-radius: 0px 0px 300px 300px; */
     /* box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1); */
@@ -139,8 +140,9 @@ header {
     text-align: center;
     color: var(--pColor);
     font-family: var(--pFontFamily);
-    line-height: 30px;
-    letter-spacing: 0px;
+    font-family: var(--sFF);
+    line-height: 40px;
+    letter-spacing: 5px;
   }
   
   .hero .btn {
