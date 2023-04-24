@@ -3,7 +3,7 @@
     --sColor: #fdd0a5;
     --oColor: hsl(200, 10%, 73%);
     --nColorW: #ffffff;
-    --nColorB: #2d2d2d;
+    --nColorB: #000000;
 
     --pFontFamily: 'Signika', sans-serif;
 
@@ -32,7 +32,7 @@
 }
 body{
     font-family: var(--pFontFamily);
-    background-color: var(--nColorW);
+    background-color: var(--nColorB);
 }
 a{
     text-decoration: none;
@@ -42,16 +42,17 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 8vh;
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+    box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.2);
+    z-index: 9;
   }
   
   nav {
     float: right;
-    margin-right: 100px;
-    padding-top: 30px;
+    margin-right: 6vw;
+    margin-top: 1.5vw;
   }
   
   ul {
@@ -62,16 +63,14 @@ header {
   
   li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 2vw;
   }
   
   header a {
-    padding: 10px;
     color: var(--pColor);
     text-decoration: none;
     font-size: var(--fs-600);
     font-weight: var(--font-weight-bold);
-    
   }
   
   nav a:hover {
@@ -79,10 +78,9 @@ header {
   }
   
   .logo img {
-    height: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 100px;
+    height: 4vh;
+    margin-top: 2vh;
+    margin-left: 7vw;
   }
 .topnav{
   display: none;
@@ -92,9 +90,8 @@ header {
  .hero {
     position: relative;
     overflow: hidden;
-    border-radius: 0px 0px 300px 300px;
     height: 70vh;
-    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    width: 100vw;
     
   }
   
@@ -102,8 +99,8 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 70vh;
     z-index: -1;
   }
   
@@ -111,8 +108,8 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 70vh;
     object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -123,10 +120,10 @@ header {
   }
   
   .hero .content {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 70vh;
     background-color: hsla(0, 0%, 0%, 0.8);
     text-align: center;
   }
@@ -143,15 +140,6 @@ header {
     text-transform: uppercase;
   }
   
-  .hero .content p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-    margin-top: 1px;
-    font-weight: var(--font-weight-bold);
-    color: var(--pColor);
-  }
-  
   .hero .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -160,7 +148,7 @@ header {
     text-transform: uppercase;
     color: #ffffff;
     background-color: var(--pColor);
-    border-radius: 0 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
     transition: background-color 0.2s ease-in-out;
   }
   
@@ -169,81 +157,78 @@ header {
     color: #7E4331;
   }
   
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: -10%;
-    left: -10%;
-    width: 120%;
-    height: 120%;
-    background-color: #fff;
-    z-index: -2;
-  }
  /* ABOUT   */
  .about{
-    background-color: #fdd0a5;
+    background-color: var(--nColorB);
+    height: 70vh;
+    width: 100vw;
  }
 
  .about h2{
     font-weight: var(--font-weight-bold);
-    font-size: 60px;
-    font-weight: 700;
-    margin-bottom: 1px;
-    padding-top: 70px;
-    color: var(--pColor);
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 10vh;
+    color: var(--sColor);
     font-family: var(--pFontFamily);
     text-align: center;
  }
  .about p{
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 23px;
-    color: #414141;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 16px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: center;
+    color: var(--oColor);
  }
 
 .about .statement{
     display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-top: 10vh;
+    justify-content: center;
+    align-items: center;
     gap: 90px;
 }
 .about .mission{
     background-color: white;
+    border-radius: 5vw;
     overflow: hidden;
-    border-radius: 0px 0px 200px 200px;
-    height: 300px;
-    width: 600px;
-    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    height: 30vh;
+    width: 30vw;
 }
 .mission h3{
     text-align: center;
     color: var(--pColor);
-    font-size: 36px;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 60px;
 }
 .mission p{
     text-align: center;
     font-weight: bold;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: var(--nColorB);
 }
 .vision{
     background-color: white;
+    border-radius: 5vw;
     overflow: hidden;
-    border-radius: 0px 0px 200px 200px;
-    height: 300px;
-    width: 600px;
-    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    height: 30vh;
+    width: 30vw;
 }
 .vision h3{
     text-align: center;
     color: var(--pColor);
-    font-size: 36px;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 60px;
 }
 .vision p{
     text-align: center;
     font-weight: bold;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: var(--nColorB);
 }
 
 
@@ -355,6 +340,8 @@ header {
     background-color: white;
     justify-content: center;
     text-align: center;
+    width: 100vw;
+    height: 60vh;
 }
 .contact h2{
     font-weight: var(--font-weight-bold);
