@@ -146,15 +146,15 @@ header {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #ffffff;
-    background-color: var(--pColor);
+    color: #7E4331;
+    background-color: var(--sColor);
     border-radius: 50px 50px 50px 50px;
     transition: background-color 0.2s ease-in-out;
   }
   
   .hero .btn:hover {
-    background-color: var(--sColor);
-    color: #7E4331;
+    background-color: var(--pColor);
+    color: #ffffff;
   }
   
  /* ABOUT   */
@@ -185,52 +185,76 @@ header {
 
 .about .statement{
     display: flex;
-    padding-top: 10vh;
     justify-content: center;
+    padding-top: 2vh;
     align-items: center;
-    gap: 90px;
+    gap: 4vw;
 }
-.about .mission{
-    background-color: white;
+.mission{
+    background-color: black;
     border-radius: 5vw;
     overflow: hidden;
-    height: 30vh;
-    width: 30vw;
 }
 .mission h3{
     text-align: center;
-    color: var(--pColor);
+    color: var(--sColor);
     font-size: 20px;
     font-weight: bold;
+    padding-top: 3vh;
+    line-height: 0vh;
 }
 .mission p{
     text-align: center;
     font-weight: bold;
     padding-left: 1vw;
     padding-right: 1vw;
-    color: var(--nColorB);
+    color: var(--oColor);
 }
+.mission-text{
+  /* background-color: white; */
+  border-radius: 5vw;
+  width: 30vw;
+  height: 20vh;
+}
+/* .mission-svg{
+  width: 30vw;
+  height: 10vh;
+  padding-right: 80vw;
+  padding-top: 0vh;
+}
+.mission-svg img{
+  width: 15vw;
+  height: 30vh;
+  margin-bottom: 30vh;
+  margin-right: 50vw;
+ 
+} */
 .vision{
-    background-color: white;
+    background-color: black;
     border-radius: 5vw;
     overflow: hidden;
-    height: 30vh;
-    width: 30vw;
 }
 .vision h3{
     text-align: center;
-    color: var(--pColor);
+    color: var(--sColor);
     font-size: 20px;
     font-weight: bold;
+    padding-top: 3vh;
+    line-height: 0vh;
 }
 .vision p{
     text-align: center;
     font-weight: bold;
     padding-left: 1vw;
     padding-right: 1vw;
-    color: var(--nColorB);
+    color: var(--oColor);
 }
-
+.vision-text{
+  /* background-color: #fff; */
+  border-radius: 5vw;
+  width: 30vw;
+  height: 20vh;
+}
 
 /* SERVICES */
 
@@ -341,11 +365,11 @@ header {
     justify-content: center;
     text-align: center;
     width: 100vw;
-    height: 60vh;
+    height: 30vh;
 }
 .contact h2{
     font-weight: var(--font-weight-bold);
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 10px;
     padding-top: 70px;
@@ -417,21 +441,21 @@ header {
   .footer{
     /* background-color: #7E4331; */
     margin-top: 0px;
-    height: 40px;
+    height: 5vh;
     text-align: center;
-    width: 100%;
+    width: 100vw;
   }
 .footer p{
-    color: #7E4331;
+    color: var(--oColor);
     font-size: 8px;
     text-align: center;
     justify-content: center;
     padding-top: 5px;
 }
 .footer .big {
-    font-size: 16px;
-    color: #000;
+    font-size: 10px;
+    color: var(--oColor);
     font-weight: bold;
-    padding-top: 10px;
+    padding-top: 1vh;
     padding-bottom: 0px;
 }
