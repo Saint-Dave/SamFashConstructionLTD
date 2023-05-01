@@ -25,9 +25,27 @@
               <ul>
                 <li><a href="#hero">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
-                <!-- <li><a href="#services">SERVICES</a></li>
-                <li><a href="#projects">PROJECTS</a></li> -->
-                <li><a href="#contact">CONTACT</a></li>
+                <div class="dropdown">
+                    <li><a href="#contact">CONTACT</a></li>
+                </div>
+                <div class="dropdown">
+                    <li><a href="service.html">SERVICES <i class="fa fa-caret-down"></i> </a></li>
+                        <div class="dropdown-content">
+                            <a href="#">Estate Management</a>
+                            <a href="#">Design and Engineering</a>
+                            <a href="#">Construction Management</a>
+                            <a href="#">Renovations and Remodeling</a>
+                            <a href="#">Pre-construction Services</a>
+                        </div>
+                </div>
+                <div class="dropdown">   
+                    <li><a href="project.html">PROJECTS <i class="fa fa-caret-down"></i></a></li>
+                        <div class="dropdown-content">
+                            <a href="#">Project 1</a>
+                            <a href="#">Project 2</a>
+                            <a href="#">Project 3</a>
+                        </div>
+                </div> 
               </ul>
             </nav>
         </div>
@@ -36,9 +54,10 @@
         <div class="topnav">
             <a href="#" class="active"><img src="img/logo.jpg" alt="Logo"></a>
             <div id="myLinks">
-              <a href="#services">Services</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
+              <a href="index.html">Home</a>
+              <a href="service.html">Services</a>
+              <a href="project.html">Projects</a>
+              <a href="index.html#contact">Contact</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
@@ -75,11 +94,6 @@
                                 <p>We are committed to deliver high quality services to meet clients expectations while advancing ethics, innovation and sustainability
                                 </p>
                             </div>
-                            <!-- <div class="mission-svg">
-                                <img src="img/Mission-and-Vision/1.png" alt="Mission Image">
-                                <img src="img/Mission-and-Vision/1.svg" alt="mission image">
-                                <i class="fa-sharp fa-light fa-car-side fa-bounce"></i>
-                            </div> -->
                         </div>
                         <div class="vision">
                             <div class="vision-text">
@@ -92,82 +106,13 @@
                 </div>
             </section>
 
-            <!-- <section class="services" id="services">
-                <div class="services" id="services">
-                    <h2>WHAT WE DO</h2>
-                    <p>We are a company that meets the need of our environment by rendering professional services to our prospective clients, 
-                        to meet their needs at an affordable rate. Here are some of the services we render.
-                    </p>
-                    <div class="services-carousel">
-                        <div class="slide">
-                            <img src="img/img01.png" alt="Image 1">
-                            <img src="img/img02.png" alt="Image 2">
-                            <img src="img/img03.png" alt="Image 3">
-                            <img src="img/img04.png" alt="Image 4">
-                        </div>
-                    </div>            
-                </div>
-            </section>
-
-            <section>
-                <div class="projects" id="projects">
-                    <h2>SELECTED PROJECTS</h2>
-                    <p>Here, you can have a look at some of the projects we have worked on...
-                        Scroll along to find a similar project that interests you.
-                    </p>
-                    <div class="selected-projects">
-                        <div class="fashyEstate">
-                            <div class="fashy-images">
-                                <img src="img/img04.png" alt="Images" width="170px" height="170px">
-                                <img src="img/img04.png" alt="Images" width="170px" height="170px"> 
-                                <img src="img/img04.png" alt="Images" width="170px" height="170px">
-                            </div>
-                            <h4>FASHY ESTATE</h4>
-                            <p>
-                                A 8 units of 5 Bedroom Terraced Town Houses and 
-                                4 units of 4 Bedroom Penthouses in Abuja.
-                                Built with Affordability in mind. 
-                                A simple place to live.
-                            </p>
-                            <a href="#contact"><button>Contact Us</button></a>
-                        </div>    
-
-                        <div class="fashyEstate">
-                            <div class="fashy-images">
-                                <img src="img/img04.png" alt="Images" width="170px" height="170px">
-                                <img src="img/img04.png" alt="Images" width="170px" height="170px"> 
-                                <img src="img/img04.png" alt="Images" width="170px" height="170px">
-                            </div>
-                            <h4>FASHY ESTATE</h4>
-                            <p>
-                                A 8 units of 5 Bedroom Terraced Town Houses and 
-                                4 units of 4 Bedroom Penthouses in Abuja.
-                                Built with Affordability in mind. 
-                                A simple place to live.
-                            </p>
-                            <a href="#contact"><button>Contact Us</button></a>
-                        </div>                                  
-                    </div>  
-                </div>
-            </section> -->
-
             <section class="contact" id="contact">
                 <div class="contact" id="contact">
                     <h2>CONTACT</h2>
-                    <!-- <p>Get in touch with us...</p> -->
-                    <a href="tel:+2349110751881"><button class="contact-button">CALL US</button></a>
-                    <a href="mailto:A.Fashae@samfashng.com"><button class="contact-button">MAIL US</button></a>
+                    <a href="tel:+2349110751881"><button class="contact-button"><i class="fa fa-phone-square"></i> CALL US </i></button></a>
+                    <a href="mailto:A.Fashae@samfashng.com"><button class="contact-button"><i class="fa fa-envelope"></i> MAIL US</button></a>
                 </div>
-
-                <!-- <div class="contact3div">
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.680226136348!2d7.475198114074867!3d9.064926676372754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104da31a67f80315%3A0xb5b5ce4829f31ee4!2s66%20Samuel%20Ladoke%20Akintola%20Blvd%2C%20Abuja!5e0!3m2!1sen!2sng!4v1657713077608!5m2!1sen!2sng"  allowfullscreen="" loading="lazy"></iframe>
-                    </div>                -->
-                    <!-- <div class="contact-form">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfE9yiFwlcDRPYhJgBTRTD4ZkWocYmKdeN86OSya0YrRrFXvw/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                    </div> -->
-                </div>
-              </section>
+            </section>
               
         </div>
     </main>
