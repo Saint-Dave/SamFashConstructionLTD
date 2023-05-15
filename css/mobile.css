@@ -1,43 +1,126 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 0vh;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.2);
+  z-index: 9;
+}
+
 .desknav{
   display: none;
 }
 
 .topnav {
   display: block;
+  position: fixed;
   overflow: hidden;
+  padding-top: 0vh;
   background-color: #ffffff;
   position: relative;
   top: 0;
   left: 0;
   width: 100vw;
   height: 7vh;
+  z-index: 90;
 }
 
-.topnav #myLinks {
-  display: none;
-}
 
-.topnav a {
-  color: #7E4331;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.topnav a.icon {
-  position: absolute;
-  right: 0;
+.overlay {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 10;
   top: 0;
-  padding-right: 20px;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
   margin-top: 10px;
 }
 
-.active {
-  background-color: #fff;
-  color: white;
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: var(--pColor);
+  display: block;
+  transition: 0.3s;
 }
-.active img{
-  width: 100px;
-  height: 30px;
+
+.overlay a:hover, .overlay a:focus {
+  color: var(--sColor);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.topnav span{
+float: right;
+padding-top: 1.5vh;
+margin-right: 10vw;
+color: var(--pColor);
+align-items: center;
+justify-content: center;
+}
+
+.topnav .logo {
+  width: 2%;
+  height: 2%;
+}
+
+/* ABOUT   */
+.about{
+  background-color: var(--nColorB);
+  height: 110vh;
+  width: 100vw;
+}
+
+.about .statement{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2vh;
+  align-items: center;
+  gap: 4vw;
+}
+
+.mission-text{
+  border-radius: 5vw;
+  width: 70vw;
+  height: 20vh;
+}
+
+.vision-text{
+  border-radius: 5vw;
+  width: 70vw;
+  height: 20vh;
+}
+
+.service1, .service2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.service1 .text{
+  width: 70vw;
+}
+.service2 .text{
+  width: 70vw;
 }
